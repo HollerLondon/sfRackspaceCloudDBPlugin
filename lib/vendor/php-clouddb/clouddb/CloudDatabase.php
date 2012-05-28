@@ -1,6 +1,8 @@
 <?php
 /**
  * Rackspace CloudDB database isntance
+ *
+ * @author Sergei Krot <sergey.krot@holler.co.uk>
  */
 class CloudDatabase
 {

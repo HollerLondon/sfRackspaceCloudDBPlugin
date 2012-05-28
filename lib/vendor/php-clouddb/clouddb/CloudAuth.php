@@ -1,10 +1,13 @@
 <?php
 /**
- * Rackspace Authentication token
+ * Rackspace Authentication response model
+ *
+ * @author Sergei Krot <sergey.krot@holler.co.uk>
  */
 class CloudAuth
 {
     public $tokenId, $tokenExpires;
+    public $serviceCatalog;
 
     /**
      * @param array $response
@@ -21,7 +24,9 @@ class CloudAuth
      */
     public function fromArray(array $response)
     {
-        $this->tokenId = $response['auth']['token']['id'];
-        $this->tokenExpires = $response['auth']['token']['expires'];
+        $this->tokenId = $response['id'];
+        if (!empty($response['expires'])) {
+            $this->tokenExpires = $response['expires'];
+        }
     }
 }

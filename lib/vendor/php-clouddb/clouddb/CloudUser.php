@@ -2,6 +2,8 @@
 
 /**
  * Rackspace CloudDB user entity
+ *
+ * @author Sergei Krot <sergey.krot@holler.co.uk>
  */
 class CloudUser
 {

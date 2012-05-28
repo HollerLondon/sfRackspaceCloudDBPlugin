@@ -1,6 +1,8 @@
 <?php
 /**
  * Rackspace CloudDB database server instance entity
+ *
+ * @author Sergei Krot <sergey.krot@holler.co.uk>
  */
 class CloudInstance
 {
